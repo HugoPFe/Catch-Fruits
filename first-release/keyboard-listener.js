@@ -1,4 +1,4 @@
-function createKeyboardListener() {
+export default function createKeyboardListener() {
 	const state = {
 		observers: []
 	}
@@ -19,9 +19,10 @@ function createKeyboardListener() {
 		const keyPressed = event.key
 	
 		const command = {
-			playerId: currentPlayerId,
+			playerId: 'player1',
 			key: keyPressed
 		}
+		
 		notifyAll(command)
 	}
 
