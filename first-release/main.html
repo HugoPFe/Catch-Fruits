@@ -33,7 +33,7 @@
 		const currentPlayerId = 'player1'
 
 		const game = createGame()
-		const keyBoardListener = createKeyboardListener()
+		const keyBoardListener = createKeyboardListener(document)
 		keyBoardListener.subscribe(game.movePlayer)
 
 		game.addPlayer({ playerId: 'player1', x: 0, y: 0 })
